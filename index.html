@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div ng-app>
+	<h3>
+	<label>dog name:</label>
+	<input type="text" ng-model="dogName"><br>
+	<label>dog weight:</label>
+	<input type="number" ng-model="dogWeight"><br><br>
+	<label>cat name:</label>
+	<input type="text" ng-model="catName"><br>
+	<label>cat weight:</label>
+	<input type="number" ng-model="catWeight"><br><br>
+	</h3>
+
+	<h3>The dog "{{dogName}}", who weights {{dogWeight}}</h3>
+	<h3>The cat "{{catName}}", who weights {{catWeight}}</h3>
+
+	<h3>They both weight {{dogWeight + catWeight}}</h2>
+</div>
+
+
+<script src="node_modules/angular/angular.min.js"></script>
+</body>
+</html>
