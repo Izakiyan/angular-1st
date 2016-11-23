@@ -6,7 +6,12 @@
 <body ng-app="appNg2">
 
 	<div ng-controller="app1">
-		<h2>this is {{try1}}</h2>
+
+		<input type="text" ng-model="txt"/>
+  		<button type="submit" value="Show" ng-click="showTwoWay()">Submit</button>
+  		
+  		<div ng-repeat="x in array1 track by $index">{{x}}</div>
+  			
 	</div>
 
 <script src="node_modules/angular/angular.min.js"></script>
